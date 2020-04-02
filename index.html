@@ -1,11 +1,69 @@
-<<<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Helen's Webpage</title>
   </head>
+  <style>
+    table{
+      border: 2px solid black
+    }
+    th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px
+    }
+
+    h1{color:blue;
+    text-align:center;}
+    div{
+      background-color: teal;
+      width: 100px;
+      height: 400px;
+      margin: 30px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+      border: 3px solid blue
+    }
+    <! include multiple fonts in case web browser cant find the font
+    #top{
+      font-size: 24px
+    }
+    #bottom{
+      font-size: 36px
+    }
+  </style>
+  <! this is a bit of css in the style bit here
+  <h1> RECIPES</h1>
   <body>
-    Hello, World!
+    <div id="top">
+      Hello, World!
+      Here are my favourite things to cook
+    </div>
+    <div id="bottom">
+      This is the <span class="name">bottom</span> of my webpage
+    </div>
+
+    <ul>
+      <li>Banana Bread</li>
+      <li>Lemon Drizzle Cake</li>
+    </ul>
+    <img src="banana.jpg" width="40%">
+    here's the ingredients you need for it:
+    <table>
+      <tr>
+        <th>ingredients</th><th>quantity</th>
+      </tr>
+      <tr>
+        <td>self raising flour</td>
+        <td>150g</td>
+    </table>
+    <form>
+      <input type="text" name="" placeholder="Full Name">
+      <button>Submit!</button>
+    </form>
   </body>
 </html>
